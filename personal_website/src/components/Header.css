@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    background-color: #610000;
+}
+
+.words {
+    color: #FFFAE9;
+}
+
+.words:hover{
+    font-weight: bold;
+}

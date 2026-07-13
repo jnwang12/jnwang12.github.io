@@ -1,0 +1,18 @@
+{
+    "recipes": [
+        {
+            "id": "1",
+            "name": "king jasmine guava tiramisu",
+            "kudos": 1,
+            "description": "light and fluffy tiramisu",
+            "image": "/images/kingjasmineguava.png"
+        },
+        {
+            "id": "2",
+            "name": "raspberry almond croissant",
+            "kudos": 1,
+            "description": "twice-baked croissant with homemade raspberry jam and almond frangipange, with chocolate shavings",
+            "image": "/images/rapsberryalmondcroissant.png"
+        }
+    ]
+}
