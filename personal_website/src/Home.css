@@ -3,13 +3,90 @@ body, html {
     padding: 0;
   }
 
-.page{
-    min-height: 100vh;
-    background-color: #FFFAE9;
-    width: 100%;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
+.about{
+  opacity: 0;
+  transform: translayteY(50px);
+  transition: opacity 1s ease-out, transform 0.8s ease-out;
+}
+
+.about.active{
+  opacity: 1;
+  transform: translayteY(0);
+  background-color: #828700;
+  width: 80%;
+}
+
+.passions{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 40px;
+
+}
+
+.passionWords {
+  color: #F2D984;
+  padding: 20px;
+  text-align: left;
+}
+
+.technicals{
+  display:flex;
+  flex-direction:row;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+
+
+.card{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: #701414;
+  width: 300px;
+  height: 300px;
+  align-items: center;
+  background-color: #E5DCB7;
+  justify-content: flex-end;
+  border-radius: 10px;
+  border: 2px solid #701414;
+}
+
+.card img {
+  width: 40%;
+
+}
+
+.card:hover{
+  background-color: #cdbd7e;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.media {
+  width: 30%;
+  box-sizing: border-box;
+  top: 200px;
+  aspect-ratio: 1/1;
+
+  clip-path: circle(50%)
+}
+
+.media img,
+.media video{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display:block;
+  border: solid 10px #a43032;
 }

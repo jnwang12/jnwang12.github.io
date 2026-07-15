@@ -1,0 +1,22 @@
+{
+    "projects": [
+        {
+            "id": "1",
+            "name": "primer selection",
+            "description": "hello, it's me primer selection",
+            "image": "/images/kingjasmineguava.png"
+        },
+        {
+            "id": "2",
+            "name": "riceapps wellbeing",
+            "description": "hello, it's me, riceapps wellbeing",
+            "image": "/images/kingjasmineguava.png"
+        },
+        {
+            "id": "3",
+            "name": "mcc project",
+            "description": "hello, it's me, mcc",
+            "image":"/images/kingjasmineguava.png"
+        }
+    ]
+}

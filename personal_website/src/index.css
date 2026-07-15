@@ -1,3 +1,7 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 :root {
   --text: #6b6375;
   --text-h: #08060d;
@@ -70,7 +74,7 @@ h1,
 h2 {
   font-family: var(--heading);
   font-weight: 500;
-  color: var(--text-h);
+  /* color: var(--text-h); */
 }
 
 h1 {
@@ -95,6 +99,37 @@ p {
   margin: 0;
 }
 
+.myHeader{
+  color: #8F9F25;
+  font-size: 80px;
+  line-height: 1.1;
+  font-weight : bold;
+  text-decoration: underline;
+  padding: 30px;
+
+}
+
+.page{
+  padding-top: 150px;
+  min-height: 100vh;
+  background-color: #FFFAE9;
+  width: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+/* .page img{
+  width: 30%;
+  padding: 30px;
+} */
+
+
+
+
+/* 
 img {
   display: block;
   margin: 0 auto;
@@ -115,4 +150,5 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
-}
+} */
+

@@ -1,0 +1,16 @@
+{
+    "recipes": [
+        {
+            "id": "1",
+            "name": "king jasmine guava tiramisu",
+            "description": "heytea-inspired tiramisu with jasmine syrup dipped ladyfingers layered with a light and fluffy guava cream foam, topped with lime zest",
+            "image": "/images/kingjasmineguava.png"
+        },
+        {
+            "id": "2",
+            "name": "raspberry almond croissant",
+            "description": "twice-baked croissant with homemade raspberry jam and almond frangipange, toppedd with chocolate shavings",
+            "image": "/images/rapsberryalmondcroissant.png"
+        }
+    ]
+}
