@@ -5,6 +5,10 @@ import {useEffect, useState} from 'react'
 import {supabase} from './supabaseClient.js'
 import {Link} from 'react-router-dom'
 
+const BASE_PATH = window.location.hostname.includes("github.io") 
+  ? "/jnwang.github.io/" 
+  : "/";
+
 const About = () => {
     const {ref, inView} = useInView({
         triggerOnce: true,
@@ -15,7 +19,7 @@ const About = () => {
         <div ref ={ref} className = {`about ${inView ? 'active' : ''}`}>
             <h1 style = {{color: "#F2D9A4"}}> a little about me!</h1>
             <div className="passions">
-                <img src = {"/images/thumbsup.png"}></img>
+                <img src = {`${BASE_PATH}images/thumbsup.png`}></img>
                 <div>
                     <h2 className = "passionWords">i'm interested in: 
                         <ul >
@@ -87,11 +91,10 @@ const GetRecipe = () => {
         <div style = {{padding: "100px"}}>
             <div className="dishes">
                 <div>
-                    <img alt = {"hirono!!!"} src = {"/images/tippler.png"}></img>
-                    <h2> i'm an avid hirono collector!!</h2>
+                    <img alt = {"hirono!!!"} src = {`${BASE_PATH}images/tippler.png`}></img>
                 </div>
                 <div style={{display: "flex", alignItems: "center", flexDirection: "column"}}>
-                    <h2>check out some of my recent creations :P</h2>
+                    <h2>check out some of my recent dishes :P</h2>
                     <Link to="/recipes" className = "getDishes" >dishes</Link>
                 </div>
             </div>
@@ -143,7 +146,7 @@ const Home = () => {
         <div className = "page">
             <Header/>
             <h1 style={intro}>hi! my name is joy wang</h1>
-            <ImgGif image = "/images/joywang.png" video = "/images/joywang.mp4"/>
+            <ImgGif image = {`${BASE_PATH}images/joywang.png`} video = {`${BASE_PATH}images/joywang.mp4`}/>
             <h2 style ={{marginTop: "50px", color: '#A43032', fontSize: "40px"}}> i'm a sophomore at rice university studying computer science and computational and applied mathematics</h2>
             <div style={{height: '20vh'}}>
             </div>
