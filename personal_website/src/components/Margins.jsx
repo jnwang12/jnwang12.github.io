@@ -1,11 +1,15 @@
 import "./Margins.css"
+import {Link} from 'react-router-dom'
+import Home from '../Home'
+import Recipes from "../Recipes"
+import Projects from "../Projects"
 
 const Header = () => {
     return(
         <div className="header">
-            <h2 className = "words" style = {{marginRight: "auto" }}>home</h2>
-            <h2 className = "words" >projects</h2>
-            <h2 className = "words">git</h2>
+            <Link to="/" className = "words" style={{ marginRight: 'auto' }}>home</Link>
+            <Link to="/projects" className = "words" >projects</Link>
+            <h2 className = "words">github</h2>
 
         </div>
     )

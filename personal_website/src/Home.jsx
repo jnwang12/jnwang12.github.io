@@ -3,6 +3,7 @@ import {Header, Footer} from './components/Margins.jsx'
 import { useInView } from 'react-intersection-observer'
 import {useEffect, useState} from 'react'
 import {supabase} from './supabaseClient'
+import {Link} from 'react-router-dom'
 
 const About = () => {
     const {ref, inView} = useInView({
@@ -14,7 +15,7 @@ const About = () => {
         <div ref ={ref} className = {`about ${inView ? 'active' : ''}`}>
             <h1 style = {{color: "#F2D9A4"}}> a little about me!</h1>
             <div className="passions">
-                <img alt = {"a photo i Guess"}></img>
+                <img src = {"/images/thumbsup.png"}></img>
                 <div>
                     <h2 className = "passionWords">i'm interested in: 
                         <ul >
@@ -81,6 +82,23 @@ const ImgGif = ({image, video}) => {
     )
 }
 
+const GetRecipe = () => {
+    return(
+        <div style = {{padding: "100px"}}>
+            <div className="dishes">
+                <div>
+                    <img alt = {"hirono!!!"} src = {"/images/tippler.png"}></img>
+                    <h2> i'm an avid hirono collector!!</h2>
+                </div>
+                <div style={{display: "flex", alignItems: "center", flexDirection: "column"}}>
+                    <h2>check out some of my recent creations :P</h2>
+                    <Link to="/recipes" className = "getDishes" >dishes</Link>
+                </div>
+            </div>
+        </div>
+    )
+}
+
 
 
 const Home = () => {
@@ -119,7 +137,6 @@ const Home = () => {
         lineHeight: 1.1
     }
 
-    //vid!
     
     
     return(
@@ -127,13 +144,14 @@ const Home = () => {
             <Header/>
             <h1 style={intro}>hi! my name is joy wang</h1>
             <ImgGif image = "/images/joywang.png" video = "/images/joywang.mp4"/>
-            <h2 style ={{marginTop: "50px", color: '#A43032'}}> i'm a sophomore at rice university studying computer science and computational and applied mathematics</h2>
+            <h2 style ={{marginTop: "50px", color: '#A43032', fontSize: "40px"}}> i'm a sophomore at rice university studying computer science and computational and applied mathematics</h2>
             <div style={{height: '20vh'}}>
             </div>
             <About/>
             <div style={{height: '20vh'}}>
             </div>
             <Technical tech={tech}/>
+            <GetRecipe/>
             <Footer/>
         </div>
     )

@@ -20,7 +20,7 @@ body, html {
 .passions{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   gap: 50px;
   margin-top: 40px;
@@ -29,8 +29,14 @@ body, html {
 
 .passionWords {
   color: #F2D984;
-  padding: 20px;
-  text-align: left;
+  font-size: 30px;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+
+.passions img{
+  width: 45%;
 }
 
 .technicals{
@@ -89,4 +95,43 @@ body, html {
   object-fit: cover;
   display:block;
   border: solid 10px #a43032;
+}
+
+
+.dishes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 70%;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.dishes img {
+  width: 50%;
+}
+
+.dishes h2 {
+  padding: 20px;
+  color: #828700;
+}
+
+.getDishes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a43032;
+  font-size: 35px;
+  color:#E5DCB7;
+  border-radius: 12px;
+  text-decoration: none;
+  width: 50%;
+  aspect-ratio: 4/3;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+
+.getDishes:hover{
+  font-weight: bold;
 }
