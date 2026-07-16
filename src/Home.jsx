@@ -18,8 +18,8 @@ const About = () => {
             <h1 style = {{color: "#F2D9A4"}}> a little about me!</h1>
             <div className="passions">
                 <img src = {`${BASE_PATH}images/thumbsup.png`}></img>
-                <div>
-                    <h2 className = "passionWords">i'm interested in: 
+                <div className = "passionWords">
+                    <h2 style={{fontSize : "45px", fontWeight: "strong"}}>i'm interested in: </h2>
                         <ul >
                             <li>bioinformatics</li>
                             <li>high-performance computing</li>
@@ -29,8 +29,6 @@ const About = () => {
                             <li>collaboration</li>
                             <li>adaptability</li>
                         </ul>
-
-                    </h2>
                 </div>
             </div>
         </div>
