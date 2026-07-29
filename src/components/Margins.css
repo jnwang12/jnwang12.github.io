@@ -24,11 +24,18 @@
 
 .footer{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: #610000;
     width: 100%;
     height: 200px;
     bottom: 0;
     align-items: center;
     margin-top: auto;
+}
+
+
+.aligning{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
