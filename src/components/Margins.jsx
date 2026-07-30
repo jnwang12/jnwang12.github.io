@@ -7,7 +7,8 @@ const Header = () => {
             <Link to="/" className = "words" style={{ marginRight: 'auto' }}>home</Link>
             <Link to="/recipes" className="words">recipes/creations </Link>
             <Link to="/projects" className = "words" >projects</Link>
-            <h2 className = "words">github</h2>
+            <a href="https://github.com/jnwang12" className="words">github</a>
+            {/* <h2 className = "words">github</h2> */}
 
         </div>
     )
