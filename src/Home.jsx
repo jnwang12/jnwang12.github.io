@@ -143,7 +143,7 @@ const Home = () => {
             <Header/>
             <h1 style={intro}>hi! my name is joy wang</h1>
             <ImgGif image = {`${BASE_PATH}images/joywang.png`} video = {`${BASE_PATH}images/joywang.mp4`}/>
-            <h2 style ={{padding:"60px", width: "60%", color: '#A43032', fontSize: "40px"}}> i'm a sophomore at rice university studying computer science and computational and applied mathematics</h2>
+            <h2 style ={{padding:"60px", width: "60%", color: '#A43032', fontSize: "40px"}}> i'm a student at rice university studying computer science and computational and applied mathematics</h2>
             <div style={{height: '20vh'}}>
             </div>
             <About/>
